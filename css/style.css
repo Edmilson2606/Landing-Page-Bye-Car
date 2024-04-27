@@ -19,6 +19,12 @@
   --carousel-card-price: #265e70;
   --button-learn-more-background: #4dbce9;
   --button-learn-more-color: #ffffff;
+  
+  --itens-services-background: #4dbce9;
+  --itens-services-headings: #ffffff;
+  --itens-price: #265e70;
+  --itens-color: #000000;
+  --modal-background: #dfdfdfe5;
 }
 
 header {
@@ -138,3 +144,60 @@ section {
   border: none;
   border-radius: 15px;
 }
+
+
+.modal {
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  
+  .modal-card {
+    background-color: var(--itens-services-background);
+    padding: 40px 100px;
+    max-width: 838px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    color: var(--itens-services-headings);
+  }
+  
+  .modal-card span {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  .modal-card p {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23px;
+  }
+  
+  .modal-card > button:first-of-type {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+  }
+  
+  .modal-card > button:last-of-type {
+    font-size: 27px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--itens-price);
+  }
+  
